@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vasp-workflow-tools"
+version = "0.1.0"
+description = "Read-only VASP workflow audits and engineering lessons"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+license = {text = "MIT"}
+authors = [{name = "lzznp"}]
+
+[project.scripts]
+vasp-audit = "vasp_audit:main"
+
+[tool.setuptools]
+py-modules = ["vasp_audit"]
