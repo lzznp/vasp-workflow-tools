@@ -1,9 +1,7 @@
-# Publication scope
+# Repository contents
 
-This repository publishes original general-purpose engineering code, synthetic tests, and lessons applicable to long-running VASP workflows.
+This repository contains general-purpose audit code, engineering notes and synthetic test fixtures. Project calculation files, unpublished research data and access credentials are kept outside the repository.
 
-It does not contain project POSCAR/CONTCAR files, real OUTCAR/OSZICAR data, experimental or patent manuscripts, server addresses, usernames/paths, private keys, credentials, VASP source/binaries, PAW potentials or license files.
+Tests generate artificial POTCAR placeholders to exercise file-hash comparisons. These contain no PAW data and cannot be used to run VASP.
 
-Tests create clearly marked artificial POTCAR hash placeholders solely to check reference consistency. These are not pseudopotentials and cannot run VASP.
-
-No mechanism, patent claim, material composition, adsorption barrier, catalyst performance, or unpublished research result is established by this package. The MIT license covers only this package's code and original notes.
+The MIT license covers the code and original notes. VASP executables, source code and PAW datasets are not included.
